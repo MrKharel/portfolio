@@ -1,5 +1,12 @@
 "use server";
 
+import { Header, Hero } from "@/components";
+
 export default async function LandingPage() {
-	return <>This is the landing page</>;
+	return (
+		<>
+			<Header />
+			<Hero />
+		</>
+	);
 }

@@ -5,14 +5,16 @@
 }
 
 @theme {
-	--font-title: var(--font-josefin);
-	--font-body: var(--font-nunito);
-	--font-geist: var(--font-geist);
+	--font-mono: var(--font-fira-code);
+	--font-sans: var(--font-fira-sans);
 
 	--color-page: var(--bg-page);
 }
 
 @utility w-body {
 	width: 100vw;
-	max-width: 800px;
+	max-width: 600px;
+}
+@utility red-highlight {
+	@apply text-red-300/80;
 }
