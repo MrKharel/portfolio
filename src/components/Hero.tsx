@@ -1,4 +1,5 @@
 import { FaGithub } from "react-icons/fa6";
+import { IoLocationOutline } from "react-icons/io5";
 
 interface Link {
 	label: string;
@@ -10,22 +11,24 @@ const links: Array<Link> = [{ label: "Github", icon: FaGithub, href: "" }];
 
 export const Hero = () => {
 	return (
-		<section className="w-body flex-primary">
-			<h2 className="font-title mt-12 font-mono text-3xl lg:text-4xl font-bold">
-				Hi, I'm <span className="red-highlight">Ajesh Kharel</span>
+		<section className="w-body mt-20 flex-primary">
+			<h2 className="font-title font-mono text-4xl font-bold leading-10.5 tracking-tighter">
+				Hey, I'm <br /> <span className="red-highlight leading-16">Ajesh Kharel</span>
 			</h2>
 
-			<div className="text-body lg:max-w-120">
+			{/* Body text */}
+			<div className="text-body max-w-120 [&>p>span]:font-[400]">
 				<p>
-					An aspiring <strong>front-end developer</strong> from <u>Nepal</u>.<br />
+					For the time being, I'm a freshmen highschooler, learning to code as a side hobby. Its been almost{" "}
+					<span>three years</span> since I started to code and I'm lovinn' it.
 				</p>
 
 				<p className="mt-2">
-					Currently, I'm <strong>14 year old, freshmen year of highschool</strong>, spending my time{" "}
-					<strong>learning to code</strong>.
+					I <span>take the time to ship</span> thoughtfully, and pay close attention to the finer details.
 				</p>
 			</div>
 
+			{/* Socials */}
 			<nav className="flex gap-4">
 				{links.map((link, index) => {
 					return (
@@ -37,6 +40,13 @@ export const Hero = () => {
 						</div>
 					);
 				})}
+
+				<div className="group flex items-center gap-2">
+					<IoLocationOutline className="group-hover:animate-pulse" />
+					<a href="" className="text-white/70 group-hover:text-white/90 font-mono transition-all duration-500">
+						Jhapa, Nepal
+					</a>
+				</div>
 			</nav>
 		</section>
 	);

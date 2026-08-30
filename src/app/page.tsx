@@ -5,7 +5,7 @@ import { Header, Hero, Techs } from "@/components";
 export default async function LandingPage() {
 	return (
 		<>
-			<Header />
+			<Header title="/ajesh kharel" />
 			<Hero />
 			<Techs />
 		</>

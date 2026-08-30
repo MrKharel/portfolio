@@ -16,7 +16,7 @@
 }
 
 @utility w-body {
-	@apply px-6 self-center w-[100vw] max-w-[700px] 2xl:max-w-[800px];
+	@apply mt-8 px-6 self-center w-[100vw] max-w-[700px] 2xl:max-w-[800px];
 }
 @utility red-highlight {
 	@apply text-red-300/80;
