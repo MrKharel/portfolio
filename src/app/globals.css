@@ -11,10 +11,20 @@
 	--color-page: var(--bg-page);
 }
 
+.flex-primary {
+	@apply flex flex-col gap-4;
+}
+
 @utility w-body {
-	width: 100vw;
-	max-width: 600px;
+	@apply px-6 self-center w-[100vw] max-w-[700px] 2xl:max-w-[800px];
 }
 @utility red-highlight {
 	@apply text-red-300/80;
+}
+@utility text-body {
+	@apply text-white/70 font-[300];
+}
+
+u {
+	text-underline-offset: 3px;
 }
