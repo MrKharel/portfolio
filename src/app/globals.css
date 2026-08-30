@@ -1,7 +1,18 @@
 @import "tailwindcss";
 
+:root {
+	--bg-page: hsl(0, 9%, 7%);
+}
+
 @theme {
 	--font-title: var(--font-josefin);
 	--font-body: var(--font-nunito);
 	--font-geist: var(--font-geist);
+
+	--color-page: var(--bg-page);
+}
+
+@utility w-body {
+	width: 100vw;
+	max-width: 800px;
 }
