@@ -26,6 +26,18 @@ export const Hero = () => {
 				<p className="mt-2">
 					I <span>take the time to ship</span> thoughtfully, and pay close attention to the finer details.
 				</p>
+
+				<p className="mt-2">
+					I choose to build and focus on what genuinely interests me, namely:{" "}
+					<a href="" className="typical-link">
+						a custom chess engine
+					</a>
+					, and{" "}
+					<a href="" className="typical-link">
+						a repository of games I enjoy
+					</a>
+					.
+				</p>
 			</div>
 
 			{/* Socials */}

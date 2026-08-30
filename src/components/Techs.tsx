@@ -36,7 +36,7 @@ export const Techs = () => {
 
 const TechnologyCard = (props: TechnologyCard) => {
 	return (
-		<div className="group flex gap-2 min-w-50 w-fit px-4 py-2 flex-1 bg-white/5 hover:bg-neutral-50/10 transition-all duration-500 ease-in-out rounded-xl">
+		<div className="group flex gap-2 min-w-50 w-fit px-4 py-2 flex-1 bg-zinc-900 hover:bg-neutral-50/10 transition-all duration-500 ease-in-out rounded-xl">
 			<div className="pt-1 text-3xl text-gray-300 group-hover:-rotate-5 transition-all duration-500 ease-in-out">
 				{props.icon}
 			</div>

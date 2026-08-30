@@ -28,3 +28,6 @@
 u {
 	text-underline-offset: 3px;
 }
+.typical-link {
+	@apply text-cyan-400;
+}
