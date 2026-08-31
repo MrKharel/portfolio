@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+* {
+	color-scheme: dark;
+}
+
+body {
+	overflow-x: hidden;
+}
+
 :root {
 	--bg-page: hsl(0, 9%, 7%);
 }
@@ -30,4 +38,9 @@ u {
 }
 .typical-link {
 	@apply text-cyan-400;
+}
+
+.corner-squirkle {
+	border-radius: 22px;
+	border-radius: 22% / 18%;
 }

@@ -1,4 +1,4 @@
-import { CgPentagonUp } from "react-icons/cg";
+import { SlBadge } from "react-icons/sl";
 import { SiGit, SiNextdotjs, SiTailwindcss, SiTypescript, SiSupabase } from "react-icons/si";
 
 interface TechnologyCard {
@@ -17,10 +17,9 @@ const techCards: TechnologyCard[] = [
 
 export const Techs = () => {
 	return (
-		<section className="w-body mt-20 flex-primary">
+		<section className="w-body mt-25 flex-primary">
 			<h2 className="flex items-center gap-2 text-xl lg:text-2xl">
-				<CgPentagonUp className="size-8 text-xl font-[100]" /> <span className="">Front-end</span> Developer & Web
-				Designer
+				<SlBadge className="size-6 text-xl font-[100]" /> <span className="">Front-end</span> Developer & Web Designer
 			</h2>
 
 			<div className="text-body">I build clean, responsive website with keen attention to details</div>

@@ -6,7 +6,7 @@ interface HeaderProps {
 
 const navBtns: Array<NavButtonType> = [
 	{ label: "Home", href: "/" },
-	{ label: "Contacts", href: "/#contacts" },
+	{ label: "Projects", href: "/#projects" },
 ];
 
 export const Header = (props: HeaderProps) => {

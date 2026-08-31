@@ -1,6 +1,6 @@
 "use server";
 
-import { Header, Hero, Techs } from "@/components";
+import { Header, Hero, Projects, Techs } from "@/components";
 
 export default async function LandingPage() {
 	return (
@@ -8,6 +8,7 @@ export default async function LandingPage() {
 			<Header title="/ajesh kharel" />
 			<Hero />
 			<Techs />
+			<Projects />
 		</>
 	);
 }
