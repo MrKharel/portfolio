@@ -5,13 +5,13 @@ interface HeaderProps {
 }
 
 const navBtns: Array<NavButtonType> = [
-	{ label: "Home", href: "/" },
-	{ label: "Projects", href: "/#projects" },
+	{ label: "./home", href: "/" },
+	{ label: "./projects", href: "#projects" },
 ];
 
 export const Header = (props: HeaderProps) => {
 	return (
-		<header className="px-6 lg:px-[10vw] w-screen h-16 self-center flex justify-between items-center">
+		<header className="px-6 lg:px-[10vw] w-screen h-16 self-center flex justify-between items-center fixed top-0 backdop-blur-[10px]">
 			<Logo title={props.title} />
 
 			<nav className="flex gap-4">

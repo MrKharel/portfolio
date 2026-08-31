@@ -30,7 +30,7 @@ const projects: FeatureCard[] = [
 
 export const Projects = () => {
 	return (
-		<section id="projects" className="w-body mt-25 flex-primary">
+		<section id="projects" className="w-body mt-25 flex-primary scroll-mt-24">
 			<h2 className="flex items-center gap-2 text-xl lg:text-2xl">
 				<SlStar className="mb-1" />
 				Featured Projects

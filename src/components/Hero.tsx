@@ -11,7 +11,7 @@ const links: Array<Link> = [{ label: "Github", icon: FaGithub, href: "" }];
 
 export const Hero = () => {
 	return (
-		<section className="w-body mt-20 flex-primary">
+		<section className="w-body mt-40 flex-primary">
 			<h2 className="font-title font-mono text-4xl font-bold leading-10.5 tracking-tighter">
 				Hey, I'm <br /> <span className="red-highlight leading-16">Ajesh Kharel</span>
 			</h2>
