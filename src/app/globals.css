@@ -1,18 +1,47 @@
 @import "tailwindcss";
 
+* {
+	color-scheme: dark;
+	scroll-behavior: smooth;
+}
+
+body {
+	overflow-x: hidden;
+}
+
 :root {
 	--bg-page: hsl(0, 9%, 7%);
 }
 
 @theme {
-	--font-title: var(--font-josefin);
-	--font-body: var(--font-nunito);
-	--font-geist: var(--font-geist);
+	--font-mono: var(--font-fira-code);
+	--font-sans: var(--font-fira-sans);
 
 	--color-page: var(--bg-page);
 }
 
+.flex-primary {
+	@apply flex flex-col gap-4;
+}
+
 @utility w-body {
-	width: 100vw;
-	max-width: 800px;
+	@apply mt-8 px-6 self-center w-[100vw] max-w-[700px] 2xl:max-w-[800px];
+}
+@utility red-highlight {
+	@apply text-red-300/80;
+}
+@utility text-body {
+	@apply text-white/70 font-[300];
+}
+
+u {
+	text-underline-offset: 3px;
+}
+.typical-link {
+	@apply text-cyan-400;
+}
+
+.corner-squirkle {
+	border-radius: 22px;
+	border-radius: 22% / 18%;
 }
