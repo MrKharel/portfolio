@@ -18,13 +18,14 @@ const techCards: TechnologyCard[] = [
 export const Techs = () => {
 	return (
 		<section className="w-body mt-25 flex-primary">
-			<h2 className="flex items-center gap-2 text-xl lg:text-2xl">
-				<SlBadge className="size-6 text-xl font-[100]" /> <span className="">Front-end</span> Developer & Web Designer
+			<h2 className="flex items-center gap-2 text-2xl">
+				<SlBadge className="size-6 text-xl font-[100]" />
+				Frontend Developer ∙ Web Designer
 			</h2>
 
 			<div className="text-body">I build clean, responsive website with keen attention to details</div>
 
-			<div className="flex flex-wrap gap-4">
+			<div className="md:flex flex-wrap grid grid-cols-2 gap-2">
 				{techCards.map((card, index) => {
 					return <TechnologyCard key={index} {...card} />;
 				})}
@@ -35,7 +36,7 @@ export const Techs = () => {
 
 const TechnologyCard = (props: TechnologyCard) => {
 	return (
-		<div className="group flex gap-2 min-w-50 w-fit px-4 py-2 flex-1 bg-zinc-900 hover:bg-neutral-50/10 transition-all duration-500 ease-in-out rounded-xl">
+		<div className="group flex gap-2 md:min-w-42 w-full px-4 py-2 flex-1 bg-zinc-900 hover:bg-neutral-50/10 transition-all duration-500 ease-in-out rounded-xl">
 			<div className="pt-1 text-3xl text-gray-300 group-hover:-rotate-5 transition-all duration-500 ease-in-out">
 				{props.icon}
 			</div>
