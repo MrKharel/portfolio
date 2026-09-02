@@ -1,5 +1,5 @@
 import { SlBadge } from "react-icons/sl";
-import { SiGit, SiNextdotjs, SiTailwindcss, SiTypescript, SiSupabase, SiJavascript } from "react-icons/si";
+import { SiGit, SiNextdotjs, SiTailwindcss, SiTypescript, SiSupabase, SiJavascript, SiVite } from "react-icons/si";
 
 interface TechnologyCard {
 	icon: React.ReactNode;
@@ -19,11 +19,15 @@ const languages: TechnologyCard[] = [
 	// { icon: <SiGit className="size-6.5" />, title: "Git", description: "Version Control" },
 	// { icon: <SiSupabase className="size-6.5" />, title: "Supabase", description: "Backend, as needed" },
 ];
-const frameworks: TechnologyCard[] = [];
+const frameworks: TechnologyCard[] = [
+	{ icon: <SiNextdotjs className="size-4" />, title: "Nextjs" },
+	{ icon: <SiVite className="size-4" />, title: "Vite" },
+	{ icon: <SiTailwindcss className="size-4" />, title: "Tailwindcss" },
+];
 
 const sections: Array<Section> = [
 	{ title: "Languages", cards: languages },
-	{ title: "Library / Framworks", cards: frameworks },
+	{ title: "Frameworks", cards: frameworks },
 ];
 
 export const Techs = () => {
@@ -36,13 +40,14 @@ export const Techs = () => {
 
 			<div className="text-body">I build clean, responsive website with keen attention to details</div>
 
-			<div className="flex flex-col gap-1">
+			<div className="flex flex-col gap-2">
 				{sections.map((section, index) => {
 					return (
-						<div key={index} className="">
-							<label className="">{section.title}</label>
-
-							<div className="flex">
+						<div key={index} className="grid grid-cols-[1fr_4fr] items-center gap-4 mt-1">
+							<label className="text-white/60 font-[300] font-mono uppercase text-sm">
+								0{index + 1} {section.title}
+							</label>
+							<div className="flex flex-wrap gap-3">
 								{section.cards.map((card, index) => {
 									return <TechnologyCard key={index} {...card} />;
 								})}
@@ -57,12 +62,12 @@ export const Techs = () => {
 
 const TechnologyCard = (props: TechnologyCard) => {
 	return (
-		<div className="group flex gap-2 md:min-w-42 w-fit px-2 py-1 hover:bg-zinc-900 transition-all duration-500 ease-in-out rounded-xl border-dashed">
-			<div className="pt-1 text-3xl text-gray-300 group-hover:-rotate-5 transition-all duration-500 ease-in-out">
+		<div className="group flex gap-2 w-fit px-2 py-1 hover:bg-zinc-900 transition-all duration-500 ease-in-out border border-dashed border-white/10 rounded">
+			<div className="pt-1 text-3xl text-gray-300 group-hover:-rotate-2 transition-all duration-500 ease-in-out">
 				{props.icon}
 			</div>
 
-			<h3 className="text-white/70 group-hover:rotate-1 transition-all duration-500 ease-in-out">{props.title}</h3>
+			<h3 className="text-white/60 group-hover:rotate-1 transition-all duration-500 ease-in-out">{props.title}</h3>
 		</div>
 	);
 };
