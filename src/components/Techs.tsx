@@ -66,6 +66,3 @@ const TechnologyCard = (props: TechnologyCard) => {
 		</div>
 	);
 };
-
-// placeholder IDK JUST IGNORE IT. ALSO DELETE IT. OKAY?
-// but will you (talking to the future me). DELETE IT. I'M JUST TESTING A THING. OKAY?
