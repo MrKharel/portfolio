@@ -1,5 +1,5 @@
 import { SlBadge } from "react-icons/sl";
-import { SiGit, SiNextdotjs, SiTailwindcss, SiTypescript, SiSupabase, SiJavascript, SiVite } from "react-icons/si";
+import { SiNextdotjs, SiTailwindcss, SiTypescript, SiJavascript, SiVite } from "react-icons/si";
 
 interface TechnologyCard {
 	icon: React.ReactNode;
@@ -12,12 +12,7 @@ interface Section {
 
 const languages: TechnologyCard[] = [
 	{ icon: <SiTypescript className="size-4" />, title: "Typescript" },
-	{ icon: <SiJavascript className="size-4" />, title: "Typescript" },
-
-	// { icon: <SiNextdotjs className="size-6.5" />, title: "Next js", description: "Build Framework" },
-	// { icon: <SiTailwindcss className="size-6.5" />, title: "Tailwind", description: "CSS, but fun" },
-	// { icon: <SiGit className="size-6.5" />, title: "Git", description: "Version Control" },
-	// { icon: <SiSupabase className="size-6.5" />, title: "Supabase", description: "Backend, as needed" },
+	{ icon: <SiJavascript className="size-4" />, title: "Javascript" },
 ];
 const frameworks: TechnologyCard[] = [
 	{ icon: <SiNextdotjs className="size-4" />, title: "Nextjs" },
@@ -40,10 +35,10 @@ export const Techs = () => {
 
 			<div className="text-body">I build clean, responsive website with keen attention to details</div>
 
-			<div className="flex flex-col gap-2">
+			<div className="flex flex-col gap-6 md:gap-2">
 				{sections.map((section, index) => {
 					return (
-						<div key={index} className="grid grid-cols-[1fr_4fr] items-center gap-4 mt-1">
+						<div key={index} className="flex flex-col md:items-center md:grid grid-cols-[1fr_4fr] gap-2 md:gap-4 mt-1">
 							<label className="text-white/60 font-[300] font-mono uppercase text-sm">
 								0{index + 1} {section.title}
 							</label>
@@ -62,7 +57,7 @@ export const Techs = () => {
 
 const TechnologyCard = (props: TechnologyCard) => {
 	return (
-		<div className="group flex gap-2 w-fit px-2 py-1 hover:bg-zinc-900 transition-all duration-500 ease-in-out border border-dashed border-white/10 rounded">
+		<div className="group flex gap-2 w-fit px-3 py-2 hover:bg-zinc-900 transition-all duration-500 ease-in-out border border-dashed border-white/10 rounded">
 			<div className="pt-1 text-3xl text-gray-300 group-hover:-rotate-2 transition-all duration-500 ease-in-out">
 				{props.icon}
 			</div>
