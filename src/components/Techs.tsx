@@ -19,7 +19,6 @@ const frameworks: TechnologyCard[] = [
 	{ icon: <SiVite className="size-4" />, title: "Vite" },
 	{ icon: <SiTailwindcss className="size-4" />, title: "Tailwindcss" },
 ];
-
 const sections: Array<Section> = [
 	{ title: "Languages", cards: languages },
 	{ title: "Frameworks", cards: frameworks },
