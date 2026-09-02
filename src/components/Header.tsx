@@ -11,7 +11,7 @@ const navBtns: Array<NavButtonType> = [
 
 export const Header = (props: HeaderProps) => {
 	return (
-		<header className="px-6 lg:px-[10vw] w-screen h-16 self-center flex justify-between items-center fixed top-0 backdop-blur-[10px]">
+		<header className="px-6 lg:px-[10vw] w-screen h-16 self-center flex justify-between items-center fixed top-0 backdop-blur-[10px] border-b border-white/10 bg-black/10">
 			<Logo title={props.title} />
 
 			<nav className="flex gap-4">

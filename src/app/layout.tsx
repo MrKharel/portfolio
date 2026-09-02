@@ -11,7 +11,10 @@ export const metadata: Metadata = { title: "Ajesh Kharel's Portfolio" };
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
 		<html lang="en" className={`${FiraCode.variable} ${FiraSans.variable}`}>
-			<body className="font-sans flex flex-col bg-neutral-950 text-white/80 pb-20">{children}</body>
+			<body className="font-sans flex flex-col bg-neutral-950 text-white/80 pb-20">
+				<div className="bg-grid -z-10" />
+				{children}
+			</body>
 		</html>
 	);
 }

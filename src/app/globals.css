@@ -45,3 +45,12 @@ u {
 	border-radius: 22px;
 	border-radius: 22% / 18%;
 }
+
+.bg-grid {
+	position: absolute;
+	inset: 0; /* or set width/height explicitly */
+	background-image: url("/background.webp");
+	background-repeat: repeat;
+	background-size: 550px auto; /* w-48 = 12rem = 192px, height auto-scales */
+	opacity: 0.09;
+}
