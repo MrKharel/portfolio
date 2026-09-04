@@ -23,15 +23,8 @@ body {
 .flex-primary {
 	@apply flex flex-col gap-4;
 }
-
-@utility w-body {
-	@apply mt-8 px-6 self-center w-[100vw] max-w-[700px] 2xl:max-w-[800px];
-}
-@utility red-highlight {
-	@apply text-red-300/80;
-}
 @utility text-body {
-	@apply text-white/70 font-[300];
+	@apply text-white/75 font-[300] tracking-wider;
 }
 
 u {
@@ -53,4 +46,8 @@ u {
 	background-repeat: repeat;
 	background-size: 50vw auto; /* w-48 = 12rem = 192px, height auto-scales */
 	opacity: 0.13;
+}
+
+@utility section {
+	@apply w-screen max-w-[700px] 2xl:max-w-[850px] self-center px-4 md:px-10;
 }

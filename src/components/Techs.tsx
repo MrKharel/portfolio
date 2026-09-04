@@ -26,7 +26,7 @@ const sections: Array<Section> = [
 
 export const Techs = () => {
 	return (
-		<section className="w-body mt-25 flex-primary">
+		<section className="section mt-25 flex-primary">
 			<h2 className="flex items-start gap-2 text-xl lg:text-2xl">
 				<SlBadge className="size-6 text-lg lg:text-xl font-[100] mt-1" />
 				Frontend Developer & Web Designer

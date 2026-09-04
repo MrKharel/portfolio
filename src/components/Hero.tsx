@@ -11,9 +11,10 @@ const links: Array<Link> = [{ label: "Github", icon: FaGithub, href: "https://gi
 
 export const Hero = () => {
 	return (
-		<section className="w-body mt-40 flex-primary">
+		<section className="section mt-40 md:mt-45 flex-primary">
 			<h2 className="font-title font-mono text-2xl font-bold leading-10.5 tracking-tighter leading-12">
-				Hey, I'm <br /> <span className="text-4xl text-rose-300/80">Ajesh Kharel</span>
+				Hey, I&rsquo;m <br />{" "}
+				<span className="text-4xl md:text-5xl text-rose-300/80 tracking-[-3px]">Ajesh Kharel</span>
 			</h2>
 
 			{/* Body text */}
@@ -23,8 +24,8 @@ export const Hero = () => {
 					<span>three years</span> since I started to code and I'm lovinn' it.
 				</p>
 
-				<p className="mt-2">
-					I <span>take the time to ship</span> thoughtfully, and pay close attention to the finer details.
+				<p className="mt-2 flex gap-1 [&>span]:text-2xl">
+					<span>&ldquo;</span> Ship with intent, polish with empathy <span>&rdquo;</span>
 				</p>
 
 				{/* I don't currently have the projects to list here. So, commented it out for now. */}
