@@ -1,6 +1,6 @@
 import { FaGithub } from "react-icons/fa6";
 import { IoLocationOutline } from "react-icons/io5";
-import { SiNextdotjs, SiTailwindcss, SiTypescript, SiJavascript, SiVite } from "react-icons/si";
+import { SiNextdotjs, SiTailwindcss, SiTypescript } from "react-icons/si";
 
 interface Link {
 	label: string;
@@ -23,21 +23,21 @@ const links: Array<Link> = [{ label: "Github", icon: FaGithub, href: "https://gi
 export const Hero = () => {
 	return (
 		<section className="section pt-12 sm:pt-45 flex flex-col gap-8 relative">
-			<h2 className="font-title text-4xl sm:text-6xl lg:text-7xl font-bold leading-[1.2] tracking-tighter">
-				Frontend Developer <br />& <span className="text-violet-400/90">UI/UX Designer</span>
+			<h2 className="font-title text-4xl sm:text-6xl lg:text-7xl font-bold leading-[1.2] tracking-tighter animate-[fade-from-down_1s]">
+				Frontend Developer <br />& <span className="text-violet-400">UI/UX Designer</span>
 			</h2>
 			{/* Body text with improved readability */}
-			<div className="text-body max-w-xl space-y-4">
+			<div className="text-body max-w-xl space-y-4 animate-[fade-from-right_1s]">
 				<p className="text-base sm:text-lg text-white/80 leading-relaxed">
 					3 years of coding experience. I'm a freshmen highschooler who also happens to have a lil interest in deep
 					problem solving and <b>building fun things</b>.
 				</p>
 				<p className="text-sm text-white/50 font-mono tracking-wide">
-					Better to take time shipping than have undesired results
+					Better to take time shipping than have undesired product
 				</p>
 			</div>
 			{/* Socials - redesigned as pills */}
-			<nav className="flex flex-wrap gap-3 items-center">
+			<nav className="flex flex-wrap gap-3 items-center animate-[fade-from-right_1.5s]">
 				{links.map((link, index) => (
 					<a
 						key={index}
@@ -65,7 +65,7 @@ export const Hero = () => {
 				</div>
 			</nav>
 			{/* Technologies I use */}
-			<div className="flex flex-wrap gap-2 md:gap-4">
+			<div className="flex flex-wrap gap-2 md:gap-4 animate-[fade-from-up_2s]">
 				{technologies.map((tech, index) => {
 					return (
 						<div
