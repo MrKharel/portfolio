@@ -47,7 +47,7 @@ export const Projects = () => {
 
 const FeatureCard = (props: FeatureCard) => {
 	return (
-		<div className="font-mono bg-[#1E1E24] flex-1 w-full rounded-xl border border-white/5 shadow-lg shadow-black/20 hover:border-white/8 hover:-translate-y-0.5 transition-all duration-500 overflow-hidden flex flex-col group">
+		<div className="section font-mono bg-[#1E1E24] flex-1 w-full rounded-xl border border-white/5 shadow-lg shadow-black/20 hover:border-white/8 hover:-translate-y-0.5 transition-all duration-500 overflow-hidden flex flex-col group">
 			{/* Title bar */}
 			<div className="flex items-center justify-between px-4 py-3 border-b border-white/5">
 				<div className="flex gap-2">

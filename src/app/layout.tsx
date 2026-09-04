@@ -12,7 +12,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 	return (
 		<html lang="en" className={`${FiraCode.variable} ${FiraSans.variable}`}>
 			<body className="font-sans flex flex-col bg-black text-white/80 pb-20">
-				<div className="bg-grid -z-10" />
+				<div className="fixed	top-0 left-0 bg-grid -z-10" />
 				{children}
 			</body>
 		</html>
