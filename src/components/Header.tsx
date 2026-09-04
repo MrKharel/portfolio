@@ -6,7 +6,7 @@ interface HeaderProps {
 
 export const Header = (props: HeaderProps) => {
 	return (
-		<header className="px-6 lg:px-[10vw] w-screen h-22 self-center flex justify-between items-center fixed top-0">
+		<header className="px-4 lg:px-[11vw] w-screen h-20 flex items-center">
 			<Logo title={props.title} />
 		</header>
 	);
