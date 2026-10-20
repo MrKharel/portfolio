@@ -1,12 +1,13 @@
 "use server";
 
-import { Header, Hero } from "@/components";
+import { Header, Hero, Projects } from "@/components";
 
 export default async function LandingPage() {
-	return (
-		<>
-			<Header title="/ Hi, I'm Ajesh Kharel." />
-			<Hero />
-		</>
-	);
+  return (
+    <div className="max-w-xl self-center flex flex-col gap-15 mb-15">
+      <Header />
+      <Hero />
+      <Projects />
+    </div>
+  );
 }

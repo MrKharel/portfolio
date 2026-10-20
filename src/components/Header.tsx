@@ -1,13 +1,3 @@
-import { Logo } from "@/ui";
-
-interface HeaderProps {
-	title: string;
-}
-
-export const Header = (props: HeaderProps) => {
-	return (
-		<header className="px-4 lg:px-[11vw] w-screen h-20 flex items-center">
-			<Logo title={props.title} />
-		</header>
-	);
+export const Header = () => {
+  return <header className="self-start w-screen"></header>;
 };
