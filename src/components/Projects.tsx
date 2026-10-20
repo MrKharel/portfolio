@@ -1,4 +1,4 @@
-import { SlStar } from "react-icons/sl";
+import { FaStar } from "react-icons/fa";
 import { FiExternalLink, FiGithub } from "react-icons/fi";
 import { RiTerminalFill } from "react-icons/ri";
 
@@ -34,11 +34,11 @@ export const Projects = () => {
   return (
     <section id="projects" className="flex flex-col gap-3">
       <h2 className="flex items-center gap-2 text-xl lg:text-2xl">
-        <SlStar className="mb-1" />
+        <FaStar className="mb-1" />
         Featured Projects
       </h2>
 
-      <div className="flex flex-col md:flex-row gap-4 px-12 md:px-0">
+      <div className="flex flex-col md:flex-row gap-4 px-2 md:px-0">
         {projects.map((project) => (
           <FeatureCard key={project.title} {...project} />
         ))}
@@ -49,13 +49,13 @@ export const Projects = () => {
 
 const FeatureCard = (props: FeatureCard) => {
   return (
-    <div className="section font-mono bg-card hover:bg-card/80 flex-1 w-full rounded-md border border-white/5 shadow-lg shadow-black/20 hover:border-white/8 transition-colors duration-500 overflow-hidden flex flex-col group">
+    <div className="section font-mono bg-card/88 hover:bg-card/80 flex-1 w-full rounded-md border border-white/5 shadow-lg shadow-black/20 hover:border-white/8 transition-colors duration-500 overflow-hidden flex flex-col group">
       {/* Title bar */}
       <div className="flex items-center justify-between px-4 py-2 border-b border-white/5">
         <div className="flex gap-2">
-          <div className="size-2.5 rounded-full bg-red-400/80"></div>
-          <div className="size-2.5 rounded-full bg-yellow-400/80"></div>
-          <div className="size-2.5 rounded-full bg-green-400/80"></div>
+          <div className="size-2.5 rounded-full bg-red-400/80" />
+          <div className="size-2.5 rounded-full bg-yellow-400/80" />
+          <div className="size-2.5 rounded-full bg-green-400/80" />
         </div>
         <span className="text-[10px] text-white/30 tracking-wide flex items-center gap-2">
           <RiTerminalFill className="size-4" /> zsh

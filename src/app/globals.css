@@ -183,12 +183,22 @@
     @apply bg-background text-foreground;
   }
   * {
+    box-sizing: border-box;
     scroll-behavior: smooth;
   }
   p,
   span,
   div {
     @apply text-base tracking-wide leading-relaxed text-foreground/70;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-foreground text-xl;
+    user-select: none;
   }
 }
 

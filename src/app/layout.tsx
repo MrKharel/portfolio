@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${FiraCode.variable} ${FiraSans.variable} ${Roboto_Font.variable}`}
+      className={`${FiraCode.variable} ${FiraSans.variable} ${Roboto_Font.variable} max-w-screen`}
     >
       <body className="flex flex-col items-center">{children}</body>
     </html>
