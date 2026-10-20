@@ -1,18 +1,5 @@
-import { SiNextdotjs, SiTailwindcss, SiTypescript } from "react-icons/si";
-
 import { Socials } from "./Socials";
 import { Techs } from "./Techs";
-
-interface Technology {
-  icon: React.ReactNode;
-  title: string;
-}
-
-const technologies: Technology[] = [
-  { icon: <SiTypescript className="size-4" />, title: "Typescript" },
-  { icon: <SiNextdotjs className="size-4" />, title: "Nextjs" },
-  { icon: <SiTailwindcss className="size-4" />, title: "Tailwindcss" },
-];
 
 export const Hero = () => {
   return (
