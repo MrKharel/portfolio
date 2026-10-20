@@ -1,26 +1,17 @@
-import { SlBadge } from "react-icons/sl";
 import {
   SiNextdotjs,
   SiTailwindcss,
   SiTypescript,
-  SiJavascript,
-  SiVite,
-  SiRustfs,
   SiRust,
   SiGit,
   SiFigma,
   SiReact,
 } from "react-icons/si";
-import { DiRust } from "react-icons/di";
 import { FaReact, FaRust } from "react-icons/fa6";
 
 interface TechnologyCard {
   icon: React.ReactNode;
   title: string;
-}
-interface Section {
-  title: string;
-  cards: Array<TechnologyCard>;
 }
 
 const technologies: TechnologyCard[] = [
